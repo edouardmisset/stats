@@ -1,0 +1,23 @@
+{
+  "name": "stats",
+  "version": "1.0.0",
+  "description": "Parsing csv file, analysing its data and displaying some results using Typescript",
+  "main": "index.js",
+  "scripts": {
+    "start:watch": "nodemon ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edouardmisset/stats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edouardmisset/stats/issues"
+  },
+  "homepage": "https://github.com/edouardmisset/stats#readme",
+  "dependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
