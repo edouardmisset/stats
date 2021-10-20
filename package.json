@@ -19,5 +19,8 @@
   "homepage": "https://github.com/edouardmisset/stats#readme",
   "dependencies": {
     "nodemon": "^2.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.1"
   }
 }
