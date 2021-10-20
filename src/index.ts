@@ -5,15 +5,19 @@ const matches = fs
   .split('\n')
   .map((match: string): string[] => match.split(','))
 
-// const homeWin = 'H'
-// const awayWin = 'A'
+// enum - enumeration
+enum MatchResult {
+  HomeWin = 'H',
+  AwayWin = 'A',
+  Draw = 'D',
+}
 
 let manUnitedWins = 0
 
 matches.forEach((match: string[]): void => {
-  if (match[1] === 'Man United' && match[5] === 'H') {
+  if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
     manUnitedWins++
-  } else if (match[2] === 'Man United' && match[5] === 'A') {
+  } else if (match[2] === 'Man United' && match[5] === MatchResult.AwayWin) {
     manUnitedWins++
   }
 })
